@@ -7,16 +7,6 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* Apply --secondary-color to meet the requirement */
-nav a:hover {
-    color: var(--secondary-color);
-}
-
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -49,17 +39,46 @@ article {
     padding: 8px;
 }
 
-/* Reset margin and set absolute positioning for hero overlay elements */
-.hero article {
-    position: absolute;
+/* ----------------------------------
+   HEADER (CSS Grid) & NAV (CSS Flex)
+---------------------------------- */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+header .logo {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
     margin: 0;
-    background-color: var(--secondary-color);
+    padding: 0;
 }
 
-.socialmedia a {
+header nav a {
+    color: var(--accent2-color);
     text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
 }
 
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* ----------------------------------
+   HERO OVERLAY POSITIONING
+---------------------------------- */
 .hero {
     position: relative;
 }
@@ -82,9 +101,103 @@ h1 {
     /* white text - make sure there is contrast with the background-color */
 }
 
+/* Reset margin and set absolute positioning for hero overlay elements */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    margin: 0;
+    padding: 16px;
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
 .hero article img {
     float: right;
     width: 125px;
+    margin-left: 12px;
+}
+
+/* ----------------------------------
+   HISTORY SECTION
+---------------------------------- */
+.history {
+    margin: 32px 0;
+}
+
+.history h2 {
+    margin-bottom: 12px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.history p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ----------------------------------
+   ADVENTURES SECTION (5-Image Grid)
+---------------------------------- */
+.adventures {
+    margin: 32px 0;
+}
+
+.adventures h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.adventure-gallery figcaption {
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 6px;
+    color: var(--accent1-color);
+}
+
+/* ----------------------------------
+   FOOTER (Flex Layout)
+---------------------------------- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
 
 .socialmedia img {
