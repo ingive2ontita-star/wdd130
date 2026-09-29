@@ -7,7 +7,12 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* Example: Use --secondary-color on an element like navigation links, buttons, or footers */
+/* Apply --secondary-color to meet the requirement */
+header {
+    background-color: var(--secondary-color);
+}
+
+/* Or on link hover states */
 nav a:hover {
     color: var(--secondary-color);
 }
