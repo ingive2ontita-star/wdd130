@@ -1,14 +1,15 @@
 :root {
     --primary-color: #055a05;
-    /* forest green */
     --secondary-color: #f4a261;
-    /* warm sand */
     --accent1-color: #264653;
-    /* dark slate blue */
     --accent2-color: #e9c46a;
-    /* light golden yellow */
-    --heading-font: "Times New Roman", " Georgia", serif;
+    --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* Example: Use --secondary-color on an element like navigation links, buttons, or footers */
+nav a:hover {
+    color: var(--secondary-color);
 }
 
 header {
