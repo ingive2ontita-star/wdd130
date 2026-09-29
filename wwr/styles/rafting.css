@@ -73,7 +73,8 @@ header nav a {
 }
 
 nav a:hover {
-    color: var(--secondary-color);
+    color: var(--accent1-color);
+    background-color: var(--accent2-color);
 }
 
 /* ----------------------------------
@@ -95,13 +96,10 @@ h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
-    /* white text - make sure there is contrast with the background-color */
 }
 
-/* Reset margin and set absolute positioning for hero overlay elements */
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -110,7 +108,15 @@ h1 {
     margin: 0;
     padding: 16px;
     background-color: var(--secondary-color);
-    color: #fff;
+    color: var(--accent1-color);
+}
+
+.hero article h2 {
+    color: var(--accent1-color);
+}
+
+.hero article p {
+    color: var(--accent1-color);
 }
 
 .hero article img {
@@ -204,12 +210,9 @@ footer p {
     width: 32px;
     height: 32px;
     margin: 0 5px;
-    /* Adds a small gap on the left and right of each icon */
     border-radius: 4px;
-    /* Gently rounds the sharp corners of the icons */
 }
 
-/* Makes the icon fade slightly when hovered over */
 .socialmedia img:hover {
     opacity: 0.8;
 }
