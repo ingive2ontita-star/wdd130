@@ -48,6 +48,11 @@ article {
     padding: 8px;
 }
 
+/* Reset margin for hero overlay elements so absolute positioning works cleanly */
+.hero article {
+    margin: 0;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
