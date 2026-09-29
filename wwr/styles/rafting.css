@@ -8,11 +8,6 @@
 }
 
 /* Apply --secondary-color to meet the requirement */
-header {
-    background-color: var(--secondary-color);
-}
-
-/* Or on link hover states */
 nav a:hover {
     color: var(--secondary-color);
 }
@@ -33,7 +28,7 @@ body {
     color: var(--accent1-color);
 }
 
-boder,
+header,
 main,
 footer {
     width: 840px;
@@ -54,9 +49,11 @@ article {
     padding: 8px;
 }
 
-/* Reset margin for hero overlay elements so absolute positioning works cleanly */
+/* Reset margin and set absolute positioning for hero overlay elements */
 .hero article {
+    position: absolute;
     margin: 0;
+    background-color: var(--secondary-color);
 }
 
 .socialmedia a {
