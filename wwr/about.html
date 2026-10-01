@@ -1,102 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Water Rafting | Contact Us</title>
     <meta name="description"
-      content="Discover the story, mission, and passionate team behind Rafting travel Company, delivering exceptional river rafting experiences.">
+      content="Get in touch with White Water Rafting. Find our address, phone number, email, location map, and submit questions or feedback directly to our team.">
     <meta name="author" content="Ingive Ontita">
-    <title>About Us | Rafting Travel Company</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
         <a href="index.html">
-            <img src="images/site-logo.png" alt="Rafting Travel Company Logo" class="logo">
+            <img src="images/site-logo.png" alt="White Water Rafting Logo" class="logo">
         </a>
-
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/rafting.jpg"
-              alt="Thrilling white water rafting group adventure down river rapids">
-            <h1>Rafting Travel Company</h1>
+        <h1>Contact Us</h1>
 
-            <article>
-                <h2>About Us</h2>
-                <img src="images/happy.jpg"
-                  alt="Smiling clients wearing helmets and life jackets after an exciting trip">
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio perspiciatis
-                    facere illum a, consectetur laudantium officiis asperiores earum distinctio
-                    incidunt,
-                    laborum perferendis quo! Provident voluptatum vel aspernatur modi. Molestiae,
-                    vero.
-                </p>
-            </article>
-        </div>
+        <!-- Company Information & Google Map -->
+        <section class="contact-info">
+            <h2>Our Location & Contact Info</h2>
+            <address>
+                <p><strong>Address:</strong> 123 River Run Way, ngong, ID 83467</p>
+                <p><strong>Phone:</strong> (254) 101 101</p>
+                <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+            </address>
 
-        <section class="history">
-            <h2>History</h2>
-            <p>
-                <strong>Our Mission:</strong> To provide unforgettable, thrill-seeking adventures
-                while maintaining the highest standards of safety and environmental stewardship on
-                the river. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2868.221!2d-113.895!3d45.175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDEwJzMwLjAiTiAxMTPCsDUzJzQyLjAiVw!5e0!3m2!1sen!2sus!4v1600000000000"
+                  width="400" height="300" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="White Water Rafting Location Map">
+                </iframe>
+            </div>
         </section>
 
-        <section class="adventures">
-            <h2>Adventure Awaits You!</h2>
-            <div class="adventure-gallery">
+        <!-- Employee Profiles -->
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
                 <figure>
-                    <img src="images/rafting.jpg" alt="Rafting down Los Dientes del Diablo rapid">
-                    <figcaption>Los Dientes del Diablo</figcaption>
+                    <img src="images/employee1.png" alt="liz lizabeth - General Manager">
+                    <figcaption>liz lizabeth - General Manager</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/happy.jpg" alt="Group enjoying Big Mallard rapid">
-                    <figcaption>Big Mallard</figcaption>
+                    <img src="images/employee2.png" alt="Hosea kibor - Lead River Guide">
+                    <figcaption>Hosea kibor - Lead River Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/rafting.jpg" alt="Raft navigating Half Day Adventure route">
-                    <figcaption>Half Day Adventure</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/happy.jpg" alt="Full day white water rafting adventure">
-                    <figcaption>Full Day Thrill</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting.jpg" alt="Rafting through extreme rapids">
-                    <figcaption>Extreme Rapids</figcaption>
+                    <img src="images/employee3.png" alt="Agnes Ndanu - Safety Coordinator">
+                    <figcaption>Agnes Ndanu - Safety Coordinator</figcaption>
                 </figure>
             </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post" class="contact-form">
+
+                <div class="form-item">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Full Name"
+                      required>
+                </div>
+
+                <div class="form-item">
+                    <label for="useremail">Email Address:</label>
+                    <input type="email" id="useremail" name="useremail"
+                      placeholder="email@example.com" required>
+                </div>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label>
+                        <input type="radio" id="general" name="purpose" value="general" checked>
+                        General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <div class="form-item">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5"
+                      placeholder="Type your message here..." required></textarea>
+                </div>
+
+                <div class="form-item checkbox-item">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Rafting Travel Company | Ingive Ontita</p>
+        <p>&copy; 2026 White Water Rafting | Ingive Ontita</p>
         <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook.svg" alt="Facebook Icon">
+            <a href="https://facebook.com" target="_blank" rel="noopener">
+                <img src="images/facebook.png" alt="Facebook Icon">
             </a>
-            <a href="https://linkedin.com">
-                <img src="images/linkedin.svg" alt="LinkedIn Icon">
+            <a href="https://linkedin.com" target="_blank" rel="noopener">
+                <img src="images/linkedin.png" alt="LinkedIn Icon">
             </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.svg" alt="Instagram Icon">
+            <a href="https://instagram.com" target="_blank" rel="noopener">
+                <img src="images/instagram.png" alt="Instagram Icon">
             </a>
         </nav>
     </footer>
